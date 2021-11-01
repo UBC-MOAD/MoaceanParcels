@@ -1,0 +1,8 @@
+[run]
+branch = True
+source =
+    moacean_parcels
+    tests
+
+[report]
+show_missing = True

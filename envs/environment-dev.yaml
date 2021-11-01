@@ -1,0 +1,55 @@
+# conda environment description file for MoaceanParcels package
+# development environment
+#
+# Create a conda environment for development, testing and documentation
+# of the package with:
+#
+#   $ conda env create -f MoaceanParcels/envs/environment-dev.yaml
+#   $ conda activate moacean-parcels
+#   (moacean-parcels)$ python3 -m pip install --editable MoaceanParcels
+#
+# See the envs/requirements.txt file for an exhaustive list of all of the
+# packages installed in the environment and their versions used in
+# recent development.
+
+name: moacean-parcels
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - parcels
+  - pip
+  - python=3.9
+
+  # To speed up numpy and xarray
+  - bottleneck
+
+  # To run Jupyter notebooks
+  - jupyterlab
+
+  # For visualizations
+  - cartopy
+  - cmocean
+  - ffmpeg
+
+  # Test runner; req'd because some example modules import it for
+  # embedded tests
+  - pytest
+
+  # For code style & repo QA
+  - black
+  - pre-commit
+
+  # For unit tests
+  - coverage
+  - pytest-cov
+
+  # For documentation
+  - sphinx
+  - sphinx_rtd_theme
+
+  - pip:
+    # For unit tests
+    - pytest-randomly
