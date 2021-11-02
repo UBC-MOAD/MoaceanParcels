@@ -29,6 +29,9 @@ MOAD OceanParcels Kernels and Utilities
 
 Shared kernels and other code for OceanParcels developed by the UBC-MOAD group.
 
+The documentation for this package is contained in the :file:`docs/` directory,
+and it is rendered at https://moaceanparcels.readthedocs.io/en/latest/.
+
 
 License
 =======
