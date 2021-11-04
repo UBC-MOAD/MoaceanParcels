@@ -38,6 +38,9 @@
 .. image:: https://readthedocs.org/projects/MoaceanParcels/badge/?version=latest
     :target: https://moaceanparcels.readthedocs.io/en/latest/
     :alt: Documentation Status
+.. image:: https://github.com/UBC-MOAD/MoaceanParcels/workflows/sphinx-linkcheck/badge.svg
+    :target: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow:sphinx-linkcheck
+    :alt: Sphinx linkcheck
 .. image:: https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
     :target: https://github.com/UBC-MOAD/MoaceanParcels/issues
     :alt: Issue Tracker
@@ -95,7 +98,7 @@ from the :guilabel:`Code` button on the `repository`_ page.
     please follow the instructions in our :ref:`moaddocs:SecureRemoteAccess` docs
     to set up your SSH keys and :ref:`moaddocs:CopyYourPublicSshKeyToGitHub`.
 
-    .. _connecting to GitHub using SSH: https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh
+    .. _connecting to GitHub using SSH: https://docs.github.com/en/authentication/connecting-to-github-with-ssh
 
 
 .. _MoaceanParcelsDevelopmentEnvironment:
@@ -210,6 +213,10 @@ re-built and rendered at https://moaceanparcels.readthedocs.io/en/latest/.
 Link Checking the Documentation
 -------------------------------
 
+.. image:: https://github.com/UBC-MOAD/MoaceanParcels/workflows/sphinx-linkcheck/badge.svg
+    :target: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow:sphinx-linkcheck
+    :alt: Sphinx linkcheck
+
 Sphinx also provides a link checker utility which can be run to find
 broken or redirected links in the docs.
 With your :kbd:`moacean-parcels)` environment activated,
@@ -224,9 +231,56 @@ The output looks something like:
 
 .. code-block:: text
 
-    **add example linkcheck output**
+    Running Sphinx v4.2.0
+    loading pickled environment... done
+    building [mo]: targets for 0 po files that are out of date
+    building [linkcheck]: targets for 2 source files that are out of date
+    updating environment: 0 added, 1 changed, 0 removed
+    reading sources... [100%] pkg_development
+    looking for now-outdated files... none found
+    pickling environment... done
+    checking consistency... done
+    preparing documents... done
+    writing output... [100%] pkg_development
 
-Look for any errors in the above output or in _build/linkcheck/output.txt
+    ( pkg_development: line   20) ok        https://black.readthedocs.io/en/stable/
+    ( pkg_development: line  261) ok        https://coverage.readthedocs.io/en/latest/
+    ( pkg_development: line   20) ok        https://docs.python.org/3.9/
+    ( pkg_development: line   62) ok        https://docs.python.org/3/reference/lexical_analysis.html#f-strings
+    ( pkg_development: line  241) ok        https://docs.pytest.org/en/latest/
+    ( pkg_development: line  298) ok        https://git-scm.com/
+    ( pkg_development: line  106) ok        https://conda.io/en/latest/
+    ( pkg_development: line  106) ok        https://docs.conda.io/en/latest/miniconda.html
+    ( pkg_development: line   93) ok        https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+    ( pkg_development: line   20) ok        https://img.shields.io/badge/code%20style-black-000000.svg
+    (           index: line   36) ok        https://img.shields.io/badge/license-Apache%202-cb2533.svg
+    ( pkg_development: line   20) ok        https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    ( pkg_development: line   20) ok        https://img.shields.io/badge/python-3.9+-blue.svg
+    ( pkg_development: line   20) ok        https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
+    ( pkg_development: line  231) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow=sphinx-linkcheck
+    ( pkg_development: line   20) ok        https://github.com/UBC-MOAD/MoaceanParcels/issues
+    ( pkg_development: line   20) ok        https://moaceanparcels.readthedocs.io/en/latest/
+    ( pkg_development: line  261) ok        https://pytest-cov.readthedocs.io/en/latest/
+    ( pkg_development: line  307) ok        https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+    ( pkg_development: line   20) ok        https://github.com/pre-commit/pre-commit
+    ( pkg_development: line   20) ok        https://readthedocs.org/projects/MoaceanParcels/badge/?version=latest
+    ( pkg_development: line   20) ok        https://github.com/UBC-MOAD/MoaceanParcels
+    ( pkg_development: line   93) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#copyyourpublicsshkeytogithub
+    (           index: line   36) ok        https://www.apache.org/licenses/LICENSE-2.0
+    ( pkg_development: line   58) ok        https://www.python.org/
+    ( pkg_development: line  143) ok        https://www.python.org/dev/peps/pep-0008/
+    ( pkg_development: line   93) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#secureremoteaccess
+    ( pkg_development: line  177) ok        https://www.sphinx-doc.org/en/master/
+    ( pkg_development: line  177) ok        https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+    ( pkg_development: line   20) ok        https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
+    ( pkg_development: line  171) ok        https://readthedocs.org/projects/moaceanparcels/badge/?version=latest
+    build succeeded.
+
+    Look for any errors in the above output or in _build/linkcheck/output.txt
+
+:command:`make linkcheck` is run monthly via a `scheduled GitHub Actions workflow`_
+
+.. _scheduled GitHub Actions workflow: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow=sphinx-linkcheck
 
 
 .. _MoaceanParcelsRunningTheUnitTests:

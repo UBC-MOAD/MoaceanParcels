@@ -1,0 +1,28 @@
+# conda environment description file for MoaceanParcels package testing environment
+#
+# Creates a conda environment in which the MoaceanParcels package unit tests and
+# coverage analysis can be run.
+# Primarily intended for creation of a conda env for use in a GitHub Actions workflow.
+
+name: moacean-parcels-test
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - bottleneck
+  - parcels
+  - pip
+
+  # For unit tests and coverage monitoring
+  - pytest
+  - pytest-cov
+
+  # For documentation links checking
+  - sphinx
+  - sphinx_rtd_theme
+
+  - pip:
+    # For unit tests
+    - pytest-randomly

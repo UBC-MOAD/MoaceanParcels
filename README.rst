@@ -23,6 +23,9 @@ MOAD OceanParcels Kernels and Utilities
 .. image:: https://readthedocs.org/projects/moaceanparcels/badge/?version=latest
     :target: https://moaceanparcels.readthedocs.io/en/latest/
     :alt: Documentation Status
+.. image:: https://github.com/UBC-MOAD/MoaceanParcels/workflows/sphinx-linkcheck/badge.svg
+    :target: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow:sphinx-linkcheck
+    :alt: Sphinx linkcheck
 .. image:: https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
     :target: https://github.com/UBC-MOAD/MoaceanParcels/issues
     :alt: Issue Tracker
