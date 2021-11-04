@@ -12,6 +12,8 @@ channels:
 
 dependencies:
   - bottleneck
+  - cartopy
+  - ffmpeg
   - parcels
   - pip
 
