@@ -17,6 +17,10 @@ MoaceanParcels Documentation
 ****************************
 
 This is the documentation for the :kbd:`MoaceanParcels` Python package.
+:kbd:`MoaceanParcels` contains shared kernels and other code for
+`OceanParcels`_ that has been developed by the UBC-MOAD group.
+
+.. _OceanParcels: https://oceanparcels.org/
 
 
 .. toctree::
@@ -24,6 +28,7 @@ This is the documentation for the :kbd:`MoaceanParcels` Python package.
    :caption: Contents:
 
    pkg_development
+
 
 Indices
 =======
