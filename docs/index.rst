@@ -27,6 +27,7 @@ This is the documentation for the :kbd:`MoaceanParcels` Python package.
    :maxdepth: 2
    :caption: Contents:
 
+   kernels/index
    pkg_development
 
 

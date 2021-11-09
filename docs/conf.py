@@ -24,7 +24,7 @@ setup_cfg = configparser.ConfigParser()
 setup_cfg.read(os.path.abspath("../setup.cfg"))
 project = setup_cfg["metadata"]["name"]
 
-author = "Doug Latornell"
+author = "The UBC EOAS MOAD Group and The University of British Columbia"
 
 
 import datetime
@@ -52,10 +52,16 @@ release = moacean_parcels.__version__
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["sphinx.ext.intersphinx"]
+extensions = [
+    "sphinx.ext.autodoc",
+    "sphinx.ext.intersphinx",
+    "sphinx.ext.viewcode",
+]
 
 intersphinx_mapping = {
     "moaddocs": ("https://ubc-moad-docs.readthedocs.io/en/latest/", None),
+    "numpy": ("https://numpy.org/doc/stable/", None),
+    "oceanparcels": ("https://oceanparcels.org/gh-pages/html/", None),
 }
 
 # Add any paths that contain templates here, relative to this directory.
