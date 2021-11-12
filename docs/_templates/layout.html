@@ -1,7 +1,7 @@
 {% extends "!layout.html" %}
 
-  {% block menu %}
-    {{ super() }}
-    <a href="genindex.html">Index</a>
-    <a href="py-modindex.html">Module Index</a>
-  {% endblock %}
+{% block menu %}
+  {{ super() }}
+  <a href={{ pathto("genindex") }}>Index</a>
+  <a href={{ pathto("py-modindex") }}>Module Index</a>
+{% endblock %}
