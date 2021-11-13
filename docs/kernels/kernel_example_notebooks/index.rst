@@ -12,16 +12,13 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 
-*******
-Kernels
-*******
+************************
+Kernel Example Notebooks
+************************
 
-This section provides
-
+This section contains ...
 
 .. toctree::
    :caption: Contents:
 
-   add_kernel_howto
-   kernel_functions
-   kernel_example_notebooks/index
+   DeleteParticle-example.ipynb
