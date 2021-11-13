@@ -21,4 +21,8 @@ MOAD Kernel Functions
     :undoc-members:
     :show-inheritance:
 
+
+:py:func:`DeleteParticle`
+=========================
+
 .. autofunction:: moacean_parcels.kernels.DeleteParticle
