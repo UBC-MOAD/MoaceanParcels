@@ -69,6 +69,9 @@ as a recovery kernel for the particle out of bounds conditions:
     or the domain boundary,
     you should provide a recovery kernel for that condition via the
     :kbd:`ErrorCode.ErrorThroughSurface` key.
+    An example of that might be having particles that reach the surface reflect
+    back down into the water column in contrast to deleting particles that reach
+    other boundaries.
 
 Recovery kernels are not JIT-compiled when the :py:class:`parcels.particle.JITParticle`
 particle class is used.
