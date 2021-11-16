@@ -25,7 +25,9 @@ def DeleteParticle(particle, fieldset, time):
         )
 
     For a more detailed usage example,
-    please see the DeleteParticle-example notebook.
+    please see the `DeleteParticle-example.ipynb`_ notebook.
+
+    .. _DeleteParticle-example.ipynb: https://moaceanparcels.readthedocs.io/en/init-kernels/kernels/kernel_example_notebooks/DeleteParticle-example.html
 
     :param particle: Particle that has gone out of bounds.
     :type particle: :py:class:`parcels.particle.JITParticle` or
