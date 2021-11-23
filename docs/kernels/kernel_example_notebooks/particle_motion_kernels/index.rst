@@ -12,12 +12,14 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 
-************************
-Kernel Example Notebooks
-************************
+****************************************
+Particle Motion Kernel Example Notebooks
+****************************************
+
+The pages in this section are renderings of Jupyter notebooks that provide explanation
+and examples of use of the :ref:`ParticleMotionKernels`  contained in MoaceanParcels.
+
+Coming soon...
 
 .. toctree::
    :caption: Contents:
-
-   particle_motion_kernels/index
-   recovery_kernels/index
