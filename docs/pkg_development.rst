@@ -139,33 +139,32 @@ To deactivate the environment use:
 Coding Style
 ============
 
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
     :alt: The uncompromising Python code formatter
 
-The :kbd:`MoaceanParcels` package uses the `black`_ code formatting tool
-to maintain a coding style that is very close to `PEP 8`_.
+The :kbd:`MoaceanParcels` package uses Git pre-commit hooks managed by `pre-commit`_ to maintain consistent code style and and other aspects of code,
+docs,
+and repo QA.
 
-.. _black: https://black.readthedocs.io/en/stable/
-.. _PEP 8: https://www.python.org/dev/peps/pep-0008/
+.. _pre-commit: https://pre-commit.com/
 
-:command:`black` is installed as part of the
-:ref:`MoaceanParcelsDevelopmentEnvironment` setup.
-
-To run :command:`black` on the entire code-base use:
+To install the `pre-commit` hooks in a newly cloned repo,
+activate the conda development environment,
+and run :command:`pre-commit install`:
 
 .. code-block:: bash
 
     $ cd MoaceanParcels
-    $ conda activate moacean_parcels
-    (moacean-parcels)$ black ./
+    $ conda activate moacean-parcels
+    (moacean-parcels)$ pre-commit install
 
-in the repository root directory.
-The output looks something like:
+.. note:: You only need to install the hooks once immediately after you make a new clone of the `MoaceanParcels repository`_ and build your :ref:`MoaceanParcelsDevelopmentEnvironment`.
 
-.. code-block:: text
-
-    **add example black output**
+.. _MoaceanParcels repository: https://github.com/UBC-MOAD/MoaceanParcels
 
 
 .. _MoaceanParcelsBuildingTheDocumentation:
