@@ -15,6 +15,15 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "sphinx linkcheck",
+            "type": "shell",
+            "command": "source activate  moacean-parcels && make clean linkcheck",
+            "options": {
+                "cwd": "docs"
+            },
+            "problemMatcher": [],
         }
     ]
 }
