@@ -12,10 +12,16 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 
-*********************
-MOAD Kernel Functions
-*********************
+.. _MOAD-KernelFunctions:
 
+******************************************
+MOAD Kernel Functions and Particle Classes
+******************************************
+
+.. This block is required to generate the "Python Module Index" section of the docs.
+.. It doesn't produce any documentation at this location.
+.. The "..autofunction::" directives below are responsible for generating documentation
+.. from the kernel function and particle class docstrings.
 .. automodule:: moacean_parcels.kernels
     :members:
     :undoc-members:
@@ -24,8 +30,8 @@ MOAD Kernel Functions
 
 .. _ParticleBehaviourKernels:
 
-Particle Behaviour Kernels
-==========================
+Particle Behaviour Kernels and Particle Classes
+===============================================
 
 Coming soon...
 

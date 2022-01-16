@@ -39,7 +39,7 @@ the steps you need to follow to add a kernel to this package are:
    and :file:`index.html` file.
    Please see :ref:`KernelExampleNotebooks` for details.
 
-The details of what to do and how to do it for each of those steps are provided in the sections 
+The details of what to do and how to do it for each of those steps are provided in the sections
 below:
 
 
@@ -64,7 +64,7 @@ intuitive import statement like:
 
    from moacean_parcels.kernels import DeleteParticle
 
-To make that possible with the naming convention we have adopted for kernel modules and the  
+To make that possible with the naming convention we have adopted for kernel modules and the
 functions they contain,
 it is necessary to "register" kernel functions and particle classes in the
 :file:`MoaceanParcels/moacean_parcels/kernels/__init__.py` file.
@@ -76,7 +76,7 @@ The :py:func:`moacean_parcels.kernels.DeleteParticle` function is registered wit
 
 That line is using Python relative import syntax to import the function called
 :py:func:`~moacean_parcels.kernels.DeleteParticle` from the module called
-:py:mod:`moacean_parcels.kernels.DeleteParticle` in the 
+:py:mod:`moacean_parcels.kernels.DeleteParticle` in the
 :file:`MoaceanParcels/moacean_parcels/kernels/` directory.
 It has the effect of putting the :py:func:`~moacean_parcels.kernels.DeleteParticle` function into
 the :py:obj:`moacean_parcels.kernels` namespace so that import statement like:
@@ -90,15 +90,52 @@ just work.
 If you have defined a particle class in your kernel module,
 it also needs to have a registration line in the
 :file:`MoaceanParcels/moacean_parcels/kernels/__init__.py` file.
-   
+
 
 .. _KernelAndParticleAutoDoc:
 
 Kernel Function and Particle Class Auto-Documentation
 =====================================================
 
-Coming soon...
-      
+We use the `Sphinx autodoc extension`_ pull the documentation for kernel functions
+and particle classes from the code docstrings.
+
+.. _Sphinx autodoc extension: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
+
+Provided that you have followed the instruction in the :ref:`KernelModules` section about writing
+your docstrings,
+adding the documentation of your code to the :ref:`MOAD-KernelFunctions` section is a simple matter
+of adding a title and an :kbd:`autofunction` directive to the appropriate section of the
+:file:`MoaceanParcels/docs/kernels/kernel_functions.rst` file.
+For example:
+
+.. code-block:: restructuredtext
+
+   :py:func:`DeleteParticle`
+   -------------------------
+
+   .. autofunction:: moacean_parcels.kernels.DeleteParticle
+
+For a particle class:
+
+* use :kbd:`:py:class:` in the title
+* use the :kbd:`autoclass` directive
+
+Please ensure the the underline below your title is at least as long as the title.
+It can be longer,
+but Sphinx will complain if it is shorter.
+
+If you check the documentation,
+either by :ref:`building it locally <MoaceanParcelsBuildingTheDocumentation>`,
+or after it has been
+`rendered on readthedocs`_,
+and find that your kernel or particle class documentation is missing or incomplete,
+the likely cause is a reStructuredText syntax error in your docstring.
+Check the docstrings of other kernel functions or particle classes or reach out for help on the
+:kbd:`#oceanparcels` or :kbd:`#moad-python-notes` Slack channels.
+
+.. _rendered on readthedocs: https://moaceanparcels.readthedocs.io/en/latest/
+
 
 .. _KernelExampleNotebooks:
 
@@ -106,4 +143,3 @@ Kernel Example Notebooks
 ========================
 
 Coming soon...
-   
