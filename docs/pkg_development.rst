@@ -152,7 +152,7 @@ and repo QA.
 
 .. _pre-commit: https://pre-commit.com/
 
-To install the `pre-commit` hooks in a newly cloned repo,
+To install the :program:`pre-commit` hooks in a newly cloned repo,
 activate the conda development environment,
 and run :command:`pre-commit install`:
 
@@ -196,11 +196,44 @@ The output looks something like:
 
 .. code-block:: text
 
-    **add example Sphinx output**
+    Removing everything under '_build'...
+    Running Sphinx v4.3.1
+    making output directory... done
+    loading intersphinx inventory from https://ubc-moad-docs.readthedocs.io/en/latest/objects.inv...
+    loading intersphinx inventory from https://numpy.org/doc/stable/objects.inv...
+    loading intersphinx inventory from https://oceanparcels.org/gh-pages/html/objects.inv...
+    building [mo]: targets for 0 po files that are out of date
+    building [html]: targets for 9 source files that are out of date
+    updating environment: [new config] 9 added, 0 changed, 0 removed
+    reading sources... [100%] pkg_development
+    looking for now-outdated files... none found
+    pickling environment... done
+    checking consistency... done
+    preparing documents... done
+    writing output... [100%] pkg_development
+    generating indices... genindex py-modindex done
+    copying notebooks ... [100%] kernels/kernel_example_notebooks/recovery_kernels/DeleteParticle-example.ipynb
+    highlighting module code... [100%] moacean_parcels.kernels.DeleteParticle
+    writing additional pages... search done
+    copying images... [100%] _build/doctrees/nbsphinx/kernels_kernel_example_notebooks_recovery_kernels_DeleteParticle-example_13_0.png
+    copying static files... done
+    copying extra files... done
+    dumping search index in English (code: en)... done
+    dumping object inventory... done
+    build succeeded.
+
+    The HTML pages are in _build/html.
 
 The HTML rendering of the docs ends up in :file:`docs/_build/html/`.
 You can open the :file:`index.html` file in that directory tree in your browser
 to preview the results of the build.
+If you use Firefox,
+you can probably accomplish that with:
+
+.. code-block:: bash
+
+    (moacean-parcels)$ firefox docs/_build/html/index.html
+
 
 If you have write access to the `repository`_ on GitHub,
 whenever you push changes to GitHub the documentation is automatically
