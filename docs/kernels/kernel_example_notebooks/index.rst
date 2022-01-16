@@ -19,5 +19,5 @@ Kernel Example Notebooks
 .. toctree::
    :caption: Contents:
 
-   particle_motion_kernels/index
+   particle_behaviour_kernels/index
    recovery_kernels/index

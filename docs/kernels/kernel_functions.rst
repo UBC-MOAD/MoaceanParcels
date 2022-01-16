@@ -22,10 +22,10 @@ MOAD Kernel Functions
     :show-inheritance:
 
 
-.. _ParticleMotionKernels:
+.. _ParticleBehaviourKernels:
 
-Particle Motion Kernels
-=======================
+Particle Behaviour Kernels
+==========================
 
 Coming soon...
 
@@ -79,7 +79,7 @@ So,
 they are not subject to the same restrictions on Python standard library modules,
 :py:func:`print` function style,
 etc.
-as :ref:`ParticleMotionKernels` .
+as :ref:`ParticleBehaviourKernels` .
 
 
 :py:func:`DeleteParticle`
