@@ -1,4 +1,4 @@
-.. Copyright 2021, UBC EOAS MOAD Group and The University of British Columbia
+.. Copyright 2021 – present, UBC EOAS MOAD Group and The University of British Columbia
 ..
 .. Licensed under the Apache License, Version 2.0 (the "License");
 .. you may not use this file except in compliance with the License.
@@ -45,7 +45,7 @@ License
     :alt: Licensed under the Apache License, Version 2.0
 
 The code and documentation of the MOAD OceanParcels kernels and utilities project
-are copyright 2021 by UBC EOAS MOAD Group and The University of British Columbia.
+are copyright 2021 – present by UBC EOAS MOAD Group and The University of British Columbia.
 
 They are licensed under the Apache License, Version 2.0.
 https://www.apache.org/licenses/LICENSE-2.0
