@@ -142,4 +142,45 @@ Check the docstrings of other kernel functions or particle classes or reach out 
 Kernel Example Notebooks
 ========================
 
-Coming soon...
+We use the `nbsphinx`_ extension for Sphinx to enable Jupyter notebooks to be included as
+pages in this documentation.
+
+.. _nbsphinx: https://nbsphinx.readthedocs.io/en/latest/
+
+It is highly recommended that you create a notebook that explains the purpose and features of
+your kernels and particle classes,
+and provides an example of their use.
+To add your notebook to this documentation:
+
+#. Store your notebook in one of the sub-directories of
+   :file:`MoaceanParcels/docs/kernels/kernel_example_notebooks/`:
+
+   * :file:`MoaceanParcels/docs/kernels/kernel_example_notebooks/particle_behaviour_kernels/`
+     is for particle behaviour kernels and their associated particle classes
+
+   * :file:`MoaceanParcels/docs/kernels/kernel_example_notebooks/recovery_kernels/`
+     is for error recovery kernels
+
+   To make it easy for people to find the example notebook associated with a given kernel module
+   we use the convention of making the name of the notebook file the same as that of the module
+   with :kbd:`-example` appended.
+   For example,
+   the example notebook for the :file:`MoaceanParcels/moacean_parcels/kernels/DeleteParticle.py`
+   recovery kernel is
+   :file:`MoaceanParcels/docs/kernels/kernel_example_notebooks/recovery_kernels/DeleteParticle-example.ipynb`.
+
+#. Add the name of your notebook to the :kbd:`toctree` section of the :file:`index.rst` file
+   in the directory where you stored it.
+   Be sure to include the :kbd:`.ipynb` extension to signal to Sphinx that it should use `nbsphinx`_
+   to parse the notebook instead of trying to read it as reStructuredText.
+   Example:
+
+   .. code-block:: restructuredtext
+
+      .. toctree::
+      :caption: Contents:
+
+      DeleteParticle-example.ipynb
+
+   The title in the first cell of your notebook will be used as the section title in docs
+   table of contents.
