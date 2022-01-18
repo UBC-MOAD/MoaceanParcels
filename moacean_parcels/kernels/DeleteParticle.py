@@ -14,6 +14,8 @@
 
 # SPDX-License-Identifier: Apache-2.0
 
+# SPDX-License-Identifier: Apache-2.0
+
 
 def DeleteParticle(particle, fieldset, time):
     """Delete a particle that has been lost during execution

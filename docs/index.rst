@@ -12,6 +12,8 @@
 .. See the License for the specific language governing permissions and
 .. limitations under the License.
 
+.. SPDX-License-Identifier: Apache-2.0
+
 ****************************
 MoaceanParcels Documentation
 ****************************
@@ -26,6 +28,7 @@ This is the documentation for the :kbd:`MoaceanParcels` Python package.
 .. toctree::
    :caption: Contents:
 
+   installation
    kernels/index
    pkg_development
 
