@@ -47,6 +47,7 @@ dependencies:
   - pytest-cov
 
   # For documentation
+  - nbsphinx
   - sphinx
   - sphinx_rtd_theme
 

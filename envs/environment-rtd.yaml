@@ -7,6 +7,8 @@ channels:
   - nodefaults
 
 dependencies:
+  - ipython
+  - nbsphinx
   - python=3.9
 
   # readthedocs packages

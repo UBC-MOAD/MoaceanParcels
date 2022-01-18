@@ -1,9 +1,9 @@
 {
     "python.formatting.provider": "black",
-    "restructuredtext.confPath": "${workspaceFolder}/docs",
     "cSpell.words": [
         "Moacean",
         "moaceanparcels",
         "MOAD"
-    ]
+    ],
+    "restructuredtext.confPath": "${workspaceFolder}/docs"
 }

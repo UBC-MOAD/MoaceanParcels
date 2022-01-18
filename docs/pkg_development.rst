@@ -1,4 +1,4 @@
-.. Copyright 2021, UBC EOAS MOAD Group and The University of British Columbia
+.. Copyright 2021 – present, UBC EOAS MOAD Group and The University of British Columbia
 ..
 .. Licensed under the Apache License, Version 2.0 (the "License");
 .. you may not use this file except in compliance with the License.
@@ -139,33 +139,32 @@ To deactivate the environment use:
 Coding Style
 ============
 
+.. image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
     :target: https://black.readthedocs.io/en/stable/
     :alt: The uncompromising Python code formatter
 
-The :kbd:`MoaceanParcels` package uses the `black`_ code formatting tool
-to maintain a coding style that is very close to `PEP 8`_.
+The :kbd:`MoaceanParcels` package uses Git pre-commit hooks managed by `pre-commit`_ to maintain consistent code style and and other aspects of code,
+docs,
+and repo QA.
 
-.. _black: https://black.readthedocs.io/en/stable/
-.. _PEP 8: https://www.python.org/dev/peps/pep-0008/
+.. _pre-commit: https://pre-commit.com/
 
-:command:`black` is installed as part of the
-:ref:`MoaceanParcelsDevelopmentEnvironment` setup.
-
-To run :command:`black` on the entire code-base use:
+To install the :program:`pre-commit` hooks in a newly cloned repo,
+activate the conda development environment,
+and run :command:`pre-commit install`:
 
 .. code-block:: bash
 
     $ cd MoaceanParcels
-    $ conda activate moacean_parcels
-    (moacean-parcels)$ black ./
+    $ conda activate moacean-parcels
+    (moacean-parcels)$ pre-commit install
 
-in the repository root directory.
-The output looks something like:
+.. note:: You only need to install the hooks once immediately after you make a new clone of the `MoaceanParcels repository`_ and build your :ref:`MoaceanParcelsDevelopmentEnvironment`.
 
-.. code-block:: text
-
-    **add example black output**
+.. _MoaceanParcels repository: https://github.com/UBC-MOAD/MoaceanParcels
 
 
 .. _MoaceanParcelsBuildingTheDocumentation:
@@ -197,11 +196,44 @@ The output looks something like:
 
 .. code-block:: text
 
-    **add example Sphinx output**
+    Removing everything under '_build'...
+    Running Sphinx v4.3.1
+    making output directory... done
+    loading intersphinx inventory from https://ubc-moad-docs.readthedocs.io/en/latest/objects.inv...
+    loading intersphinx inventory from https://numpy.org/doc/stable/objects.inv...
+    loading intersphinx inventory from https://oceanparcels.org/gh-pages/html/objects.inv...
+    building [mo]: targets for 0 po files that are out of date
+    building [html]: targets for 9 source files that are out of date
+    updating environment: [new config] 9 added, 0 changed, 0 removed
+    reading sources... [100%] pkg_development
+    looking for now-outdated files... none found
+    pickling environment... done
+    checking consistency... done
+    preparing documents... done
+    writing output... [100%] pkg_development
+    generating indices... genindex py-modindex done
+    copying notebooks ... [100%] kernels/kernel_example_notebooks/recovery_kernels/DeleteParticle-example.ipynb
+    highlighting module code... [100%] moacean_parcels.kernels.DeleteParticle
+    writing additional pages... search done
+    copying images... [100%] _build/doctrees/nbsphinx/kernels_kernel_example_notebooks_recovery_kernels_DeleteParticle-example_13_0.png
+    copying static files... done
+    copying extra files... done
+    dumping search index in English (code: en)... done
+    dumping object inventory... done
+    build succeeded.
+
+    The HTML pages are in _build/html.
 
 The HTML rendering of the docs ends up in :file:`docs/_build/html/`.
 You can open the :file:`index.html` file in that directory tree in your browser
 to preview the results of the build.
+If you use Firefox,
+you can probably accomplish that with:
+
+.. code-block:: bash
+
+    (moacean-parcels)$ firefox docs/_build/html/index.html
+
 
 If you have write access to the `repository`_ on GitHub,
 whenever you push changes to GitHub the documentation is automatically
@@ -374,7 +406,7 @@ License
     :alt: Licensed under the Apache License, Version 2.0
 
 The code and documentation of the MOAD OceanParcels kernels and utilities project
-are copyright 2021 by UBC EOAS MOAD Group and The University of British Columbia.
+are copyright 2021 – present by UBC EOAS MOAD Group and The University of British Columbia.
 
 They are licensed under the Apache License, Version 2.0.
 https://www.apache.org/licenses/LICENSE-2.0
