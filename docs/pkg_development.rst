@@ -121,9 +121,9 @@ and building the documentation with the commands below.
 .. code-block:: bash
 
     $ cd MoaceanParcels
-    $ conda env create -f env/environment-dev.yaml
-    $ conda activate moaceanparcels
-    (moacean-parcels)$ pip install --editable .
+    $ conda env create -f envs/environment-dev.yaml
+    $ conda activate moacean-parcels
+    (moacean-parcels)$ python3 -m pip install --editable .
 
 The :kbd:`--editable` option in the :command:`pip install` command above installs
 the package from the cloned repo via symlinks so that the installed package
