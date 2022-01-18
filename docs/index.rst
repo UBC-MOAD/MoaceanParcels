@@ -28,6 +28,7 @@ This is the documentation for the :kbd:`MoaceanParcels` Python package.
 .. toctree::
    :caption: Contents:
 
+   installation
    kernels/index
    pkg_development
 
