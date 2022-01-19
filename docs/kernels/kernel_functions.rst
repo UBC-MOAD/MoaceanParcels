@@ -94,3 +94,8 @@ as :ref:`ParticleBehaviourKernels` .
 -------------------------
 
 .. autofunction:: moacean_parcels.kernels.DeleteParticle
+
+:py:func:`Stokes_drift`
+-------------------------
+
+.. autofunction:: moacean_parcels.kernels.Stokes_drift

@@ -15,3 +15,4 @@
 # SPDX-License-Identifier: Apache-2.0
 
 from .DeleteParticle import DeleteParticle
+from .Stokes_drift import Stokes_drift
