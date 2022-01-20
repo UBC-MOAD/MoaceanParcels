@@ -23,8 +23,6 @@ Particle Behaviour Kernel Example Notebooks
 The pages in this section are renderings of Jupyter notebooks that provide explanation
 and examples of use of the :ref:`ParticleBehaviourKernels` contained in MoaceanParcels.
 
-Coming soon...
-
 .. toctree::
    :caption: Contents:
 
