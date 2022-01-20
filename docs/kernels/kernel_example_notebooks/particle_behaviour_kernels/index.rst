@@ -27,3 +27,5 @@ Coming soon...
 
 .. toctree::
    :caption: Contents:
+
+   Stokes_drift-example.ipynb
