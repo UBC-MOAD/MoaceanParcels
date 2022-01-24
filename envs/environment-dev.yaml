@@ -45,6 +45,7 @@ dependencies:
   # For unit tests
   - coverage
   - pytest-cov
+  - tomli
 
   # For documentation
   - nbsphinx
