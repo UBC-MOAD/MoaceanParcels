@@ -84,7 +84,7 @@ Conventions
   So,
   we adopt the OceanParcels style in this package.
 
-  .. _Python style guide: https://www.python.org/dev/peps/pep-0008/
+  .. _Python style guide: https://peps.python.org/pep-0008/
 
 
 Copyright Notice
