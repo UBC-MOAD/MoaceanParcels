@@ -16,10 +16,11 @@
 
 # SPDX-License-Identifier: Apache-2.0
 
+
 def Stokes_drift(particle, fieldset, time):
-    '''Include the effect of Stokes drift to your particles 
+    """Include the effect of Stokes drift to your particles
     trajectory using WaveWatch3 data.
-    
+
     This kernel is intended for use as a particle behaviour kernel
         Example usage:
 
@@ -49,17 +50,18 @@ def Stokes_drift(particle, fieldset, time):
     :type fieldset: :py:class:`parcels.fieldset.FieldSet`
 
     :param time: Current time of the particle.
-    :type time: :py:attr:`numpy.float64`'''  
+    :type time: :py:attr:`numpy.float64`"""
 
     Sd_lat = particle.lat
-    if Sd_lat > 48 and Sd_lat < 51: #Check that particle is inside WW3 data field 
+    if Sd_lat > 48 and Sd_lat < 51:  # Check that particle is inside WW3 data field
         Sd_deg2m = 111319.5
-        Sd_lonc = cos((Sd_lat*math.pi)/180)
-        (Sd_u, Sd_v, Sd_wl) = fieldset.stokes[time, particle.depth, particle.lat, particle.lon]
+        Sd_lonc = cos((Sd_lat * math.pi) / 180)
+        (Sd_u, Sd_v, Sd_wl) = fieldset.stokes[
+            time, particle.depth, particle.lat, particle.lon
+        ]
 
-        k = (2*math.pi)/Sd_wl
-        Sd_u = (Sd_u*exp(-abs(2*k*particle.depth)))/(Sd_deg2m*Sd_lonc)
-        Sd_v = (Sd_v*exp(-abs(2*k*particle.depth)))/Sd_deg2m
+        k = (2 * math.pi) / Sd_wl
+        Sd_u = (Sd_u * exp(-abs(2 * k * particle.depth))) / (Sd_deg2m * Sd_lonc)
+        Sd_v = (Sd_v * exp(-abs(2 * k * particle.depth))) / Sd_deg2m
         particle.lon += Sd_u * particle.dt
         particle.lat += Sd_v * particle.dt
-
