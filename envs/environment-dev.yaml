@@ -51,6 +51,7 @@ dependencies:
   - nbsphinx
   - sphinx
   - sphinx_rtd_theme
+  - sphinx-notfound-page
 
   - pip:
     # For unit tests
