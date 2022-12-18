@@ -7,17 +7,25 @@ channels:
   - nodefaults
 
 dependencies:
+  - bottleneck
+  - cartopy
+  - cmocean
+  - ffmpeg
   - ipython
+  - jupyterlab
   - nbsphinx
+  - parcels
+  - pip
+  - pytest
   - python=3.10
 
   # readthedocs packages
   - mock
   - pillow
-  - pip
   - sphinx
   - sphinx_rtd_theme
   - sphinx-notfound-page
+
   - pip:
     - recommonmark
     - readthedocs-sphinx-ext
