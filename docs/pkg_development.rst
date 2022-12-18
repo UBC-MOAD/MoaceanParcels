@@ -25,8 +25,8 @@
 .. image:: https://img.shields.io/badge/license-Apache%202-cb2533.svg
     :target: https://www.apache.org/licenses/LICENSE-2.0
     :alt: Licensed under the Apache License, Version 2.0
-.. image:: https://img.shields.io/badge/python-3.9+-blue.svg
-    :target: https://docs.python.org/3.9/
+.. image:: https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
+    :target: https://docs.python.org/3.10/
     :alt: Python Version
 .. image:: https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
     :target: https://github.com/UBC-MOAD/MoaceanParcels
@@ -56,20 +56,13 @@ and other code for OceanParcels developed by the UBC-MOAD group.
 Python Versions
 ===============
 
-.. image:: https://img.shields.io/badge/python-3.9+-blue.svg
-    :target: https://docs.python.org/3.9/
+.. image:: https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
+    :target: https://docs.python.org/3.10/
     :alt: Python Version
 
-The :kbd:`moacean_parcels` package is developed and tested using `Python`_ 3.9.
-The package uses some Python language features that are not available in versions prior to 3.8,
-in particular:
-
-* `formatted string literals`_
-  (aka *f-strings*)
-  with :kbd:`=` specifiers
+The :kbd:`moacean_parcels` package is developed and tested using `Python`_ 3.10.
 
 .. _Python: https://www.python.org/
-.. _formatted string literals: https://docs.python.org/3/reference/lexical_analysis.html#f-strings
 
 
 .. _MoaceanParcelsGettingTheCode:
@@ -279,7 +272,7 @@ The output looks something like:
 
     ( pkg_development: line   20) ok        https://black.readthedocs.io/en/stable/
     ( pkg_development: line  261) ok        https://coverage.readthedocs.io/en/latest/
-    ( pkg_development: line   20) ok        https://docs.python.org/3.9/
+    ( pkg_development: line   20) ok        https://docs.python.org/3.10/
     ( pkg_development: line   62) ok        https://docs.python.org/3/reference/lexical_analysis.html#f-strings
     ( pkg_development: line  241) ok        https://docs.pytest.org/en/latest/
     ( pkg_development: line  298) ok        https://git-scm.com/
@@ -289,7 +282,7 @@ The output looks something like:
     ( pkg_development: line   20) ok        https://img.shields.io/badge/code%20style-black-000000.svg
     (           index: line   36) ok        https://img.shields.io/badge/license-Apache%202-cb2533.svg
     ( pkg_development: line   20) ok        https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-    ( pkg_development: line   20) ok        https://img.shields.io/badge/python-3.9+-blue.svg
+    ( pkg_development: line   20) ok        https://img.shields.io/badge/python-3.10-blue.svg
     ( pkg_development: line   20) ok        https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
     ( pkg_development: line  231) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow=sphinx-linkcheck
     ( pkg_development: line   20) ok        https://github.com/UBC-MOAD/MoaceanParcels/issues

@@ -21,7 +21,7 @@ channels:
 dependencies:
   - parcels
   - pip
-  - python=3.9
+  - python=3.10
 
   # To speed up numpy and xarray
   - bottleneck

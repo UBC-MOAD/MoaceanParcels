@@ -2,7 +2,7 @@ name: sphinx-linkcheck
 
 on:
   push:
-    branches: ['*']
+    branches: [ '*' ]
   schedule:
     - cron: 43 10 13 * *  # 10:43 UTC on the 4th day of each month
 
@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ['3.9']
+        python-version: [ '3.10' ]
 
     steps:
       - uses: actions/checkout@v2
