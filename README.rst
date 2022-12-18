@@ -23,7 +23,10 @@ MOAD OceanParcels Kernels and Utilities
 .. image:: https://github.com/UBC-MOAD/MoaceanParcels/workflows/sphinx-linkcheck/badge.svg
     :target: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow:sphinx-linkcheck
     :alt: Sphinx linkcheck
-.. image:: https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+.. image:: https://github.com/UBC-MOAD/MoaceanParcels/actions/workflows/codeql-analysis.yaml/badge.svg
+      :target: https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow%3Acodeql-analysis
+      :alt: CodeQL analysis
+.. image:: https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
     :target: https://github.com/UBC-MOAD/MoaceanParcels/issues
     :alt: Issue Tracker
 
