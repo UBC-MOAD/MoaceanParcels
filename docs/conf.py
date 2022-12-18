@@ -43,6 +43,7 @@ release = moacean_parcels.__version__
 # ones.
 extensions = [
     "nbsphinx",
+    "notfound.extension",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
