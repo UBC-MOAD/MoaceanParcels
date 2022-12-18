@@ -116,20 +116,32 @@ to update your environment.
 Activate Environment and Install the Package
 --------------------------------------------
 
-Activate your environment and install the :kbd:`MoaceanParcels` package with:
+Activate your environment:
 
 .. code-block:: bash
 
     $ cd MoaceanParcels
     $ conda activate moacean-parcels
-    (moacean-parcels)$ python3 -m pip install --editable .
 
 Here we assume the environment is named :kbd:`moacean-parcels`.
 You should substitute whatever name you used for your environment.
 
-The :kbd:`--editable` option in the :command:`python3 -m pip install` command above installs
-the package from the cloned repo via symlinks so that the installed package
-will be automatically updated as the repo evolves whenever you do a :command:`git pull`.
+In the :kbd:`mocean-parcels` environment :kbd:`MoaceanParcels` is installed in
+`editable install mode`_ as part of the conda environment creation process.
+That means that the package is installed in a way that it can be updated when new features are
+pushed to GitHub by simply doing a :command:`git pull` in the :file:`MoaceanParcels` directory.
+
+.. _editable install mode: https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs
+
+If you are using an environment that you created,
+activate your environment,
+then install the :kbd:`MoaceanParcels` package with:
+
+.. code-block:: bash
+
+    $ cd MoaceanParcels
+    $ conda activate my-environment
+    (my-environment)$ python3 -m pip install --editable .
 
 To deactivate the environment use:
 

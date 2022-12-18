@@ -30,3 +30,6 @@ dependencies:
   - pip:
     # For unit tests
     - pytest-randomly
+
+    # install MoaceanParcels package in editable mode
+    - --editable ../
