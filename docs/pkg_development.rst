@@ -116,11 +116,13 @@ and building the documentation with the commands below.
     $ cd MoaceanParcels
     $ conda env create -f envs/environment-dev.yaml
     $ conda activate moacean-parcels
-    (moacean-parcels)$ python3 -m pip install --editable .
 
-The :kbd:`--editable` option in the :command:`pip install` command above installs
-the package from the cloned repo via symlinks so that the installed package
-will be automatically updated as the repo evolves.
+``MoaceanParcels`` is installed in `editable install mode`_ as part of the conda environment
+creation process.
+That means that the package is installed in a way that it can be updated when new features are
+pushed to GitHub by simply doing a :command:`git pull` in the :file:`MoaceanParcels` directory.
+
+.. _editable install mode: https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs
 
 To deactivate the environment use:
 
