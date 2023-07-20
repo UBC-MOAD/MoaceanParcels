@@ -119,7 +119,7 @@ psutil==5.9.4
 ptyprocess==0.7.0
 pure-eval==0.2.2
 pycparser==2.21
-Pygments==2.13.0
+Pygments==2.15.0
 pymbolic==2022.2
 pyOpenSSL==22.1.0
 pyparsing==3.0.9
