@@ -167,7 +167,7 @@ traitlets==5.7.1
 typing_extensions==4.4.0
 ukkonen==1.0.1
 unicodedata2==15.0.0
-urllib3==1.26.17
+urllib3==1.26.18
 virtualenv==20.17.1
 wcwidth==0.2.5
 webencodings==0.5.1
