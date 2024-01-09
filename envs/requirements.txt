@@ -52,7 +52,7 @@ fasteners==0.17.3
 fastjsonschema==2.16.2
 filelock==3.8.2
 flit_core==3.8.0
-fonttools==4.38.0
+fonttools==4.43.0
 fsspec==2022.11.0
 HeapDict==1.0.1
 identify==2.5.10
