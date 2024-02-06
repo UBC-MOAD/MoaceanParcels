@@ -154,7 +154,7 @@ A good development strategy may be to start with a :py:class:`parcels.ScipyParti
 and then change it to a :py:class:`parcels.JITParticle` once it is debugged and tested.
 Please see the `OceanParcels JIT Particles and Scipy particles tutorial`_ for more details.
 
-.. _OceanParcels JIT Particles and Scipy particles tutorial: https://nbviewer.org/github/OceanParcels/parcels/blob/master/parcels/examples/tutorial_jit_vs_scipy.ipynb
+.. _OceanParcels JIT Particles and Scipy particles tutorial: https://docs.oceanparcels.org/en/latest/examples/tutorial_jit_vs_scipy.html
 
 Variables defined within particle classes provide the way to pass information
 other than :kbd:`fieldset` and :kbd:`time` to a kernel function operating on
