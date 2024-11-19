@@ -52,7 +52,7 @@ extensions = [
 intersphinx_mapping = {
     "moaddocs": ("https://ubc-moad-docs.readthedocs.io/en/latest/", None),
     "numpy": ("https://numpy.org/doc/stable/", None),
-    "oceanparcels": ("https://oceanparcels.org/gh-pages/html/", None),
+    "oceanparcels": ("https://docs.oceanparcels.org/en/latest/", None),
 }
 
 # Add any paths that contain templates here, relative to this directory.
