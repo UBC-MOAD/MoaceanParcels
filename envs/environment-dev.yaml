@@ -6,7 +6,7 @@
 #
 #   $ conda env create -f MoaceanParcels/envs/environment-dev.yaml
 #   $ conda activate moacean-parcels
-#   (moacean-parcels)$ python3 -m pip install --editable MoaceanParcels
+#   (moacean-parcels)$ python -m pip install --editable MoaceanParcels
 #
 # See the envs/requirements.txt file for an exhaustive list of all of the
 # packages installed in the environment and their versions used in
@@ -21,7 +21,7 @@ channels:
 dependencies:
   - parcels
   - pip
-  - python=3.10
+  - python=3.13
 
   # To speed up numpy and xarray
   - bottleneck
@@ -48,10 +48,10 @@ dependencies:
   - tomli
 
   # For documentation
-  - nbsphinx
-  - sphinx
-  - sphinx_rtd_theme
-  - sphinx-notfound-page
+  - nbsphinx==0.9.5
+  - sphinx==8.1.3
+  - sphinx-notfound-page==1.0.4
+  - sphinx-rtd-theme==3.0.0
 
   - pip:
     # For unit tests

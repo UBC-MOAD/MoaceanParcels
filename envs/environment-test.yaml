@@ -23,10 +23,10 @@ dependencies:
   - tomli
 
   # For documentation links checking
-  - nbsphinx
-  - sphinx
-  - sphinx_rtd_theme
-  - sphinx-notfound-page
+  - nbsphinx==0.9.5
+  - sphinx==8.1.3
+  - sphinx-notfound-page==1.0.4
+  - sphinx-rtd-theme==3.0.0
 
   - pip:
     # For unit tests
