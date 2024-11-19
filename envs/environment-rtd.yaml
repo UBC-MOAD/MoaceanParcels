@@ -19,14 +19,17 @@ dependencies:
   - pytest
   - python=3.10
 
-  # readthedocs packages
+  # Sphinx and extensions
+  - nbsphinx==0.9.5
+  - sphinx==8.1.3
+  - sphinx-notfound-page==1.0.4
+  - sphinx-rtd-theme==3.0.0
+
+  # readthedocs build system packages
   - mock
   - pillow
-  - sphinx
-  - sphinx_rtd_theme
-  - sphinx-notfound-page
-
   - pip:
+    - commonmark
     - recommonmark
     - readthedocs-sphinx-ext
 

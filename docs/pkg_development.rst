@@ -111,7 +111,7 @@ will have all of the Python packages necessary for development,
 testing,
 and building the documentation with the commands below.
 
-.. _Conda: https://conda.io/en/latest/
+.. _Conda: https://docs.conda.io/en/latest/
 .. _Miniconda3: https://docs.conda.io/en/latest/miniconda.html
 
 .. code-block:: bash
@@ -197,27 +197,39 @@ The output looks something like:
 .. code-block:: text
 
     Removing everything under '_build'...
-    Running Sphinx v4.3.1
+    Running Sphinx v8.1.3
+    loading translations [en]... done
     making output directory... done
-    loading intersphinx inventory from https://ubc-moad-docs.readthedocs.io/en/latest/objects.inv...
-    loading intersphinx inventory from https://numpy.org/doc/stable/objects.inv...
-    loading intersphinx inventory from https://oceanparcels.org/gh-pages/html/objects.inv...
+    Writing evaluated template result to /media/doug/warehouse/MOAD/MoaceanParcels/docs/_build/html/_static/nbsphinx-code-cells.css
+    loading intersphinx inventory 'moaddocs' from https://ubc-moad-docs.readthedocs.io/en/latest/objects.inv ...
+    loading intersphinx inventory 'numpy' from https://numpy.org/doc/stable/objects.inv ...
+    loading intersphinx inventory 'oceanparcels' from https://docs.oceanparcels.org/en/latest/objects.inv ...
     building [mo]: targets for 0 po files that are out of date
-    building [html]: targets for 9 source files that are out of date
-    updating environment: [new config] 9 added, 0 changed, 0 removed
+    writing output...
+    building [html]: targets for 11 source files that are out of date
+    updating environment: [new config] 11 added, 0 changed, 0 removed
     reading sources... [100%] pkg_development
     looking for now-outdated files... none found
     pickling environment... done
     checking consistency... done
     preparing documents... done
+    copying assets...
+    copying static files...
+    Writing evaluated template result to /media/doug/warehouse/MOAD/MoaceanParcels/docs/_build/html/_static/language_data.js
+    Writing evaluated template result to /media/doug/warehouse/MOAD/MoaceanParcels/docs/_build/html/_static/documentation_options.js
+    Writing evaluated template result to /media/doug/warehouse/MOAD/MoaceanParcels/docs/_build/html/_static/basic.css
+    Writing evaluated template result to /media/doug/warehouse/MOAD/MoaceanParcels/docs/_build/html/_static/js/versions.js
+    copying static files: done
+    copying extra files...
+    copying extra files: done
+    copying assets: done
     writing output... [100%] pkg_development
     generating indices... genindex py-modindex done
+    copying linked files...
     copying notebooks ... [100%] kernels/kernel_example_notebooks/recovery_kernels/DeleteParticle-example.ipynb
-    highlighting module code... [100%] moacean_parcels.kernels.DeleteParticle
+    highlighting module code... [100%] moacean_parcels.kernels.Stokes_drift
     writing additional pages... search done
     copying images... [100%] _build/doctrees/nbsphinx/kernels_kernel_example_notebooks_recovery_kernels_DeleteParticle-example_13_0.png
-    copying static files... done
-    copying extra files... done
     dumping search index in English (code: en)... done
     dumping object inventory... done
     build succeeded.
@@ -263,49 +275,72 @@ The output looks something like:
 
 .. code-block:: text
 
-    Running Sphinx v4.2.0
-    loading pickled environment... done
+    Removing everything under '_build'...
+    Running Sphinx v8.1.3
+    loading translations [en]... done
+    making output directory... done
+    loading intersphinx inventory 'moaddocs' from https://ubc-moad-docs.readthedocs.io/en/latest/objects.inv ...
+    loading intersphinx inventory 'numpy' from https://numpy.org/doc/stable/objects.inv ...
+    loading intersphinx inventory 'oceanparcels' from https://docs.oceanparcels.org/en/latest/objects.inv ...
     building [mo]: targets for 0 po files that are out of date
-    building [linkcheck]: targets for 2 source files that are out of date
-    updating environment: 0 added, 1 changed, 0 removed
+    writing output...
+    building [linkcheck]: targets for 11 source files that are out of date
+    updating environment: [new config] 11 added, 0 changed, 0 removed
     reading sources... [100%] pkg_development
     looking for now-outdated files... none found
     pickling environment... done
     checking consistency... done
     preparing documents... done
+    copying assets...
+    copying assets: done
     writing output... [100%] pkg_development
 
-    ( pkg_development: line   20) ok        https://black.readthedocs.io/en/stable/
-    ( pkg_development: line  261) ok        https://coverage.readthedocs.io/en/latest/
-    ( pkg_development: line   20) ok        https://docs.python.org/3.10/
-    ( pkg_development: line   62) ok        https://docs.python.org/3/reference/lexical_analysis.html#f-strings
-    ( pkg_development: line  241) ok        https://docs.pytest.org/en/latest/
-    ( pkg_development: line  298) ok        https://git-scm.com/
-    ( pkg_development: line  106) ok        https://conda.io/en/latest/
-    ( pkg_development: line  106) ok        https://docs.conda.io/en/latest/miniconda.html
-    ( pkg_development: line   93) ok        https://docs.github.com/en/authentication/connecting-to-github-with-ssh
-    ( pkg_development: line   20) ok        https://img.shields.io/badge/code%20style-black-000000.svg
-    (           index: line   36) ok        https://img.shields.io/badge/license-Apache%202-cb2533.svg
-    ( pkg_development: line   20) ok        https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
-    ( pkg_development: line   20) ok        https://img.shields.io/badge/python-3.10-blue.svg
-    ( pkg_development: line   20) ok        https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
-    ( pkg_development: line  231) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow=sphinx-linkcheck
-    ( pkg_development: line   20) ok        https://github.com/UBC-MOAD/MoaceanParcels/issues
-    ( pkg_development: line   20) ok        https://moaceanparcels.readthedocs.io/en/latest/
-    ( pkg_development: line  261) ok        https://pytest-cov.readthedocs.io/en/latest/
-    ( pkg_development: line  307) ok        https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
-    ( pkg_development: line   20) ok        https://github.com/pre-commit/pre-commit
-    ( pkg_development: line   20) ok        https://readthedocs.org/projects/MoaceanParcels/badge/?version=latest
-    ( pkg_development: line   20) ok        https://github.com/UBC-MOAD/MoaceanParcels
-    ( pkg_development: line   93) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#copyyourpublicsshkeytogithub
-    (           index: line   36) ok        https://www.apache.org/licenses/LICENSE-2.0
-    ( pkg_development: line   58) ok        https://www.python.org/
-    ( pkg_development: line  143) ok        https://www.python.org/dev/peps/pep-0008/
-    ( pkg_development: line   93) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#secureremoteaccess
-    ( pkg_development: line  177) ok        https://www.sphinx-doc.org/en/master/
-    ( pkg_development: line  177) ok        https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
-    ( pkg_development: line   20) ok        https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
-    ( pkg_development: line  171) ok        https://readthedocs.org/projects/moaceanparcels/badge/?version=latest
+    ( pkg_development: line  355) ok        https://coverage.readthedocs.io/en/latest/
+    (    installation: line   71) ok        https://docs.conda.io/en/latest/
+    (    installation: line   27) ok        https://docs.conda.io/projects/conda/en/latest/
+    (    installation: line   60) ok        https://docs.github.com/en/authentication/connecting-to-github-with-ssh
+    (    installation: line   71) ok        https://docs.conda.io/en/latest/miniconda.html
+    ( pkg_development: line   22) ok        https://black.readthedocs.io/en/stable/
+    ( pkg_development: line  335) ok        https://docs.pytest.org/en/latest/
+    (kernels/kernel_functions: line   44) ok        https://docs.oceanparcels.org/en/latest/reference/particles.html#parcels.particle.JITParticle
+    (kernels/add_kernel_howto: line  147) ok        https://docs.oceanparcels.org/en/latest/examples/tutorial_jit_vs_scipy.html
+    ( pkg_development: line   22) ok        https://docs.python.org/3.10/
+    (kernels/kernel_functions: line   44) ok        https://docs.oceanparcels.org/en/latest/reference/fields.html#parcels.fieldset.FieldSet
+    ( pkg_development: line  392) ok        https://git-scm.com/
+    (kernels/kernel_functions: line   56) ok        https://docs.oceanparcels.org/en/latest/reference/misc.html#module-parcels.tools.statuscodes
+    ( pkg_development: line   46) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions/workflows/codeql-analysis.yaml/badge.svg
+    ( pkg_development: line   22) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow%3Acodeql-analysis
+    (    installation: line   23) ok        https://github.com/UBC-MOAD/MoaceanParcels
+    ( pkg_development: line   22) ok        https://github.com/UBC-MOAD/MoaceanParcels/issues
+    ( pkg_development: line   43) ok        https://github.com/UBC-MOAD/MoaceanParcels/workflows/sphinx-linkcheck/badge.svg
+    ( pkg_development: line   37) ok        https://img.shields.io/badge/code%20style-black-000000.svg
+    (           index: line   46) ok        https://img.shields.io/badge/license-Apache%202-cb2533.svg
+    ( pkg_development: line   34) ok        https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    (    installation: line   42) ok        https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
+    ( pkg_development: line  403) ok        https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
+    ( pkg_development: line   28) ok        https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
+    ( pkg_development: line   49) ok        https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
+    (kernels/add_kernel_howto: line  388) ok        https://moaceanparcels.readthedocs.io/en/latest/
+    (kernels/add_kernel_howto: line  405) ok        https://nbsphinx.readthedocs.io/en/latest/
+    ( pkg_development: line  325) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow=sphinx-linkcheck
+    ( pkg_development: line   22) ok        https://github.com/pre-commit/pre-commit
+    (kernels/kernel_functions: line   44) ok        https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64
+    (           index: line   21) ok        https://oceanparcels.org/
+    ( pkg_development: line   22) ok        https://github.com/UBC-MOAD/MoaceanParcels/actions?query=workflow:sphinx-linkcheck
+    (kernels/add_kernel_howto: line   78) ok        https://peps.python.org/pep-0008/
+    ( pkg_development: line  355) ok        https://pytest-cov.readthedocs.io/en/latest/
+    (    installation: line  129) ok        https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs
+    (    installation: line   31) ok        https://pip.pypa.io/en/stable/cli/pip_install/#editable-installs
+    (    installation: line   60) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#copyyourpublicsshkeytogithub
+    (    installation: line   60) ok        https://ubc-moad-docs.readthedocs.io/en/latest/ssh_access.html#secureremoteaccess
+    (           index: line   44) ok        https://www.apache.org/licenses/LICENSE-2.0
+    ( pkg_development: line   66) ok        https://www.python.org/
+    ( pkg_development: line   40) ok        https://readthedocs.org/projects/MoaceanParcels/badge/?version=latest
+    ( pkg_development: line  149) ok        https://pre-commit.com/
+    ( pkg_development: line  175) ok        https://readthedocs.org/projects/moaceanparcels/badge/?version=latest
+    ( pkg_development: line  179) ok        https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+    ( pkg_development: line  179) ok        https://www.sphinx-doc.org/en/master/
+    (kernels/add_kernel_howto: line  360) ok        https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
     build succeeded.
 
     Look for any errors in the above output or in _build/linkcheck/output.txt

@@ -45,8 +45,6 @@ Getting the Code
 
 Clone the code and documentation `repository`_ from GitHub with:
 
-.. _repository: https://github.com/UBC-MOAD/MoaceanParcels
-
 .. code-block:: bash
 
     $ git clone git@github.com:UBC-MOAD/MoaceanParcels.git
@@ -76,7 +74,7 @@ will have all of the Python packages necessary for development,
 testing,
 and building the documentation for the package with the commands below.
 
-.. _Conda: https://conda.io/en/latest/
+.. _Conda: https://docs.conda.io/en/latest/
 .. _Miniconda3: https://docs.conda.io/en/latest/miniconda.html
 
 .. code-block:: bash
