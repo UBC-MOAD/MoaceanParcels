@@ -40,7 +40,7 @@ def Stokes_drift(particle, fieldset, time):
 
     For a more detailed usage example,
     please see the example notebook for this kernel in the
-    :ref:`particle_behaviour_kernels` section.
+    :ref:`ParticleBehaviourKernelExampleNotebooks` section.
 
     :param particle: Particle to add behaviour.
     :type particle: :py:class:`parcels.particle.JITParticle` or
