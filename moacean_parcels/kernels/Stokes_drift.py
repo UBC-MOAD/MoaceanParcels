@@ -14,8 +14,6 @@
 
 # SPDX-License-Identifier: Apache-2.0
 
-# SPDX-License-Identifier: Apache-2.0
-
 
 def Stokes_drift(particle, fieldset, time):
     """Include the effect of Stokes drift to your particles
