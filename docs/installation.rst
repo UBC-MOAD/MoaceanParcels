@@ -45,8 +45,6 @@ Getting the Code
 
 Clone the code and documentation `repository`_ from GitHub with:
 
-.. _repository: https://github.com/UBC-MOAD/MoaceanParcels
-
 .. code-block:: bash
 
     $ git clone git@github.com:UBC-MOAD/MoaceanParcels.git
