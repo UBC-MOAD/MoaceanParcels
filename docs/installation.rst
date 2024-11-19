@@ -76,7 +76,7 @@ will have all of the Python packages necessary for development,
 testing,
 and building the documentation for the package with the commands below.
 
-.. _Conda: https://conda.io/en/latest/
+.. _Conda: https://docs.conda.io/en/latest/
 .. _Miniconda3: https://docs.conda.io/en/latest/miniconda.html
 
 .. code-block:: bash
