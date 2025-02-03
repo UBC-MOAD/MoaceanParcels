@@ -14,5 +14,4 @@
 
 # SPDX-License-Identifier: Apache-2.0
 
-"""Unit tests for moacean_parcels
-"""
+"""Unit tests for moacean_parcels"""
