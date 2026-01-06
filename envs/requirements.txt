@@ -16,7 +16,7 @@ babel==2.17.0
 beautifulsoup4==4.13.1
 black==25.1.0
 bleach==6.2.0
-bokeh==3.6.2
+bokeh==3.8.2
 Bottleneck==1.4.2
 Brotli==1.2.0
 cached-property==1.5.2
