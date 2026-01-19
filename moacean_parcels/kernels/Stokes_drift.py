@@ -54,7 +54,7 @@ def Stokes_drift(particle, fieldset, time):
     if Sd_lat > 48 and Sd_lat < 51:  # Check that particle is inside WW3 data field
         Sd_deg2m = 111319.5
         Sd_lonc = cos((Sd_lat * math.pi) / 180)
-        (Sd_u, Sd_v, Sd_wl) = fieldset.stokes[
+        Sd_u, Sd_v, Sd_wl = fieldset.stokes[
             time, particle.depth, particle.lat, particle.lon
         ]
 
