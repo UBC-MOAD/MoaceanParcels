@@ -138,7 +138,7 @@ pyparsing==3.3.2
 pyproj==3.7.2
 pyshp==3.0.3
 PySocks==1.7.1
-pytest==9.0.2
+pytest==9.0.3
 pytest-cov==7.0.0
 pytest-randomly==4.0.1
 python-dateutil==2.9.0.post0
