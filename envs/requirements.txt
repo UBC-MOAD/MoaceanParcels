@@ -181,7 +181,7 @@ terminado==0.18.1
 tinycss2==1.4.0
 tomli==2.4.0
 toolz==1.1.0
-tornado==6.5.5
+tornado==6.5.6
 tqdm==4.67.3
 traitlets==5.14.3
 trajan==0.8.0
