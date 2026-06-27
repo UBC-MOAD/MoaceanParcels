@@ -97,7 +97,7 @@ matplotlib==3.10.8
 matplotlib-inline==0.2.1
 mistune==3.2.1
 MoaceanParcels==22.1.dev0
-msgpack==1.1.2
+msgpack==1.2.1
 munkres==1.1.4
 mypy_extensions==1.1.0
 narwhals==2.18.0
