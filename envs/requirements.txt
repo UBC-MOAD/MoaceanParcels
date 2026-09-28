@@ -4,7 +4,7 @@
 #   (moacean-parcels)$ python -m pip list --format=freeze >> envs/requirements.txt
 
 alabaster==1.0.0
-anyio==4.12.1
+anyio==4.14.2
 argon2-cffi==25.1.0
 argon2-cffi-bindings==25.1.0
 arrow==1.4.0
