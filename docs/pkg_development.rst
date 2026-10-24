@@ -25,8 +25,8 @@
 .. image:: https://img.shields.io/badge/license-Apache%202-cb2533.svg
     :target: https://www.apache.org/licenses/LICENSE-2.0
     :alt: Licensed under the Apache License, Version 2.0
-.. image:: https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
-    :target: https://docs.python.org/3.10/
+.. image:: https://img.shields.io/badge/Python-3.13-blue?logo=python&label=Python&logoColor=gold
+    :target: https://docs.python.org/3.13/
     :alt: Python Version
 .. image:: https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
     :target: https://github.com/UBC-MOAD/MoaceanParcels
@@ -59,11 +59,11 @@ and other code for OceanParcels developed by the UBC-MOAD group.
 Python Versions
 ===============
 
-.. image:: https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
-    :target: https://docs.python.org/3.10/
+.. image:: https://img.shields.io/badge/Python-3.13-blue?logo=python&label=Python&logoColor=gold
+    :target: https://docs.python.org/3.13/
     :alt: Python Version
 
-The :kbd:`moacean_parcels` package is developed and tested using `Python`_ 3.10.
+The :kbd:`moacean_parcels` package is developed and tested using `Python`_ 3.13.
 
 .. _Python: https://www.python.org/
 
@@ -304,7 +304,7 @@ The output looks something like:
     ( pkg_development: line  335) ok        https://docs.pytest.org/en/latest/
     (kernels/kernel_functions: line   44) ok        https://docs.oceanparcels.org/en/latest/reference/particles.html#parcels.particle.JITParticle
     (kernels/add_kernel_howto: line  147) ok        https://docs.oceanparcels.org/en/latest/examples/tutorial_jit_vs_scipy.html
-    ( pkg_development: line   22) ok        https://docs.python.org/3.10/
+    ( pkg_development: line   22) ok        https://docs.python.org/3.13/
     (kernels/kernel_functions: line   44) ok        https://docs.oceanparcels.org/en/latest/reference/fields.html#parcels.fieldset.FieldSet
     ( pkg_development: line  392) ok        https://git-scm.com/
     (kernels/kernel_functions: line   56) ok        https://docs.oceanparcels.org/en/latest/reference/misc.html#module-parcels.tools.statuscodes
@@ -318,7 +318,7 @@ The output looks something like:
     ( pkg_development: line   34) ok        https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     (    installation: line   42) ok        https://img.shields.io/badge/version%20control-git-blue.svg?logo=github
     ( pkg_development: line  403) ok        https://img.shields.io/github/issues/MIDOSS/WWatch3-Cmd?logo=github
-    ( pkg_development: line   28) ok        https://img.shields.io/badge/Python-3.10-blue?logo=python&label=Python&logoColor=gold
+    ( pkg_development: line   28) ok        https://img.shields.io/badge/Python-3.13-blue?logo=python&label=Python&logoColor=gold
     ( pkg_development: line   49) ok        https://img.shields.io/github/issues/UBC-MOAD/MoaceanParcels?logo=github
     (kernels/add_kernel_howto: line  388) ok        https://moaceanparcels.readthedocs.io/en/latest/
     (kernels/add_kernel_howto: line  405) ok        https://nbsphinx.readthedocs.io/en/latest/
