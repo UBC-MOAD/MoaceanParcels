@@ -20,7 +20,7 @@ channels:
 
 dependencies:
   - parcels
-  - pip
+  - pip>=26.2.2  # re: eMudhra intermediate CA certificates compromise
   - python=3.13
 
   # To speed up numpy and xarray
