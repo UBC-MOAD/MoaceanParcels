@@ -15,7 +15,7 @@ dependencies:
   - cartopy
   - ffmpeg
   - parcels
-  - pip
+  - pip>=26.2.2  # re: eMudhra intermediate CA certificates compromise
 
   # For unit tests and coverage monitoring
   - pytest
