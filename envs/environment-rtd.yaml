@@ -17,7 +17,7 @@ dependencies:
   - parcels
   - pip>=26.2.2  # re: eMudhra intermediate CA certificates compromise
   - pytest
-  - python=3.10
+  - python=3.13
 
   # Sphinx and extensions
   - nbsphinx==0.9.5
