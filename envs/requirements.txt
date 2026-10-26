@@ -18,7 +18,6 @@ beautifulsoup4==4.15.0
 black==26.10.1
 bleach==6.4.0
 bokeh==3.10.0
-Bottleneck==1.6.0
 Brotli==1.2.1
 Cartopy==0.26.0
 certifi==2026.10.23
