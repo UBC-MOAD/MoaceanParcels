@@ -23,9 +23,6 @@ dependencies:
   - pip>=26.2.2  # re: eMudhra intermediate CA certificates compromise
   - python=3.13
 
-  # To speed up numpy and xarray
-  - bottleneck
-
   # To run Jupyter notebooks
   - jupyterlab
 

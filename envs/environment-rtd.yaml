@@ -7,7 +7,6 @@ channels:
   - nodefaults
 
 dependencies:
-  - bottleneck
   - cartopy
   - cmocean
   - ffmpeg
